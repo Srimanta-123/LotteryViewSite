@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="lottery.css">
+    <title>LOTTERY-VIEW</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">Lottery View</a>
+            </div>
+
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">1 PM</a></li>
+                <li><a href="#">6 PM</a></li>
+                <li><a href="#">8 PM</a></li>
+            </ul>
+
+            <a href="#" class="action_btn btnLogin-popup">Log in</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu  ">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">1 PM</a></li>
+            <li><a href="#">6 PM</a></li>
+            <li><a href="#">8 PM</a></li>
+            <li><a href="#" class="action_btn btnLogin-popup">Login</a></li>
+
+        </div>
+
+
+
+    </header>
+
+<!--  RESULT TIME  -->
+
+
+<div class="result_time">
+   <a href="#" class="time_btn">1 PM</a>
+   <a href="#" class="time_btn">6 PM</a>
+   <a href="#" class="time_btn">8 PM</a>
+</div>
+
+
+
+ <!-- Login box pop-up-->
+ 
+
+    <div class="wrapper">
+
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="btn">Login</button>
+
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" class="register-link"> Register</a></p>
+                </div>
+
+            </form>
+        </div>
+
+
+         <!--registration-->
+
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Username</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                
+                <div class="remember-forgot">
+                    <label><input type="checkbox">I agree to the terms & Conditions</label>
+                   
+                </div>
+
+                <button type="submit" class="btn">Register</button>
+
+                <div class="login-register">
+                    <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+                </div>
+
+            </form>
+        </div>
+
+
+
+    </div>
+
+<!-- </div> -->
+
+
+<!-- MAIN DIV / HERO -->
+    <main>
+
+        <div class="search">
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_bo8vqwyw.json" background="transparent"
+                speed="1" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+            <input class="input" type="text" placeholder=" Search your ticket here ...">
+        </div>
+
+        <div class="first">
+            <h1>Nagaland State Lottery Result </h1>
+            <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_xwumYl.json" background="transparent"
+                speed="2" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+
+            <h2>Today 8PM</h2>
+            <img src="photos/lottery.jpg" alt="result image">
+
+
+        </div>
+        <div class="second">
+            <p>
+                <lottie-player id="bulb_animation" src="https://assets2.lottiefiles.com/packages/lf20_lnlvrvxe.json"
+                    background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                    autoplay></lottie-player>
+
+                Lottery Sambad <b>( লটারি সংবাদ )</b> result today July 7 2023.
+                Click on the link above to Download and view result online.
+                Sambad today lottery result online PDF. Check daily 01:00 PM,
+                6:00 PM and 8:00 PM. As you now draw held 3 times a daw once at
+                01:00 PM Second time 6PM and 3rd Time 8PM. So you can check three times result online.
+                To check Sambad Result 3 Times a day click on the given below links.
+            </p>
+
+
+
+        </div>
+        <div class="third">
+            <h3>You can ignore this part</h3>
+            <h4>Details About Nagaland State Lottery Result 8pm</h4>
+            <p>The Info Table of <b>Dear Lottery Sambad 8 PM </b>is a comprehensive resource
+                that provides important information about the Dear Lottery Sambad 8 PM draw.
+                This table includes details such as the date of the draw, the Dear Lottery Night
+                prize structure, the Nagaland State Lottery Sambad winners, and the winning numbers.</p>
+            <table class="info">
+                <tr>
+                    <th>State Name </th>
+                    <td>Nagaland State Lottery
+                    </td>
+                </tr>
+                <tr>
+                    <th>Lottery Name </th>
+                    <td>Dear Night Lottery 8pm
+                    </td>
+                </tr>
+                <tr>
+                    <th>Post Name </th>
+                    <td>Dear Nagaland State Lottery Result Today
+                    </td>
+                </tr>
+                <tr>
+                    <th>Draw Fix Time </th>
+                    <td>08:00 pm To 08:10 pm
+                    </td>
+                </tr>
+                <tr>
+                    <th>1st Prize </th>
+                    <td>छह 1,00,00,000
+                    </td>
+                </tr>
+                <tr>
+                    <th>Result Status </th>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <th>Website Name </th>
+                    <td><b><i><a href="#">LotteryView.in</a></i></b></td>
+                </tr>
+            </table>
+
+            <p>If you are a regular player of the Dear Lottery Sambad 8 PM or just
+                want to keep track of the results, this info table is a valuable tool
+                for staying up-to-date on the latest developments. The table is easy to
+                read and provides a quick overview of all the relevant details. With its
+                convenient format, you can easily access all the information you need to know
+                about the Dear Nagaland state lottery Sambad Night draw.</p>
+        </div>
+
+        <!-- same div -->
+        <div class="third">
+            <h3>You can ignore this part</h3>
+            <h4>Details About Nagaland State Lottery Result 8pm</h4>
+            <p>The Info Table of <b>Dear Lottery Sambad 8 PM </b>is a comprehensive resource that
+                provides important information about the Dear Lottery Sambad 8 PM draw. This table
+                includes details such as the date of the draw, the Dear Lottery Night prize structure,
+                the Nagaland State Lottery Sambad winners, and the winning numbers.</p>
+            <table class="info">
+                <tr>
+                    <th>State Name </th>
+                    <td>Nagaland State Lottery
+                    </td>
+                </tr>
+                <tr>
+                    <th>Lottery Name </th>
+                    <td>Dear Night Lottery 8pm
+                    </td>
+                </tr>
+                <tr>
+                    <th>Post Name </th>
+                    <td>Dear Nagaland State Lottery Result Today
+                    </td>
+                </tr>
+                <tr>
+                    <th>Draw Fix Time </th>
+                    <td>08:00 pm To 08:10 pm
+                    </td>
+                </tr>
+                <tr>
+                    <th>1st Prize </th>
+                    <td>छह 1,00,00,000
+                    </td>
+                </tr>
+                <tr>
+                    <th>Result Status </th>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <th>Website Name </th>
+                    <td><b><i><a href="#">LotteryView.in</a></i></b></td>
+                </tr>
+            </table>
+
+            <p>If you are a regular player of the Dear Lottery Sambad 8 PM or just want to keep
+                track of the results, this info table is a valuable tool for staying up-to-date
+                on the latest developments. The table is easy to read and provides a quick overview
+                of all the relevant details. With its convenient format, you can easily access all the
+                information you need to know about the Dear Nagaland state lottery Sambad Night draw.</p>
+        </div>
+
+
+        <!-- SIMILAR POSTS  -->
+
+
+        <div class="similr_posts_heading">
+            <h3>Check Similar Posts ..</h3>
+        </div>
+
+        <div class="similr_posts">
+            <div class="one">
+                <h2>title</h2>
+                <p>West Bengal Lottery Result Today 6PM | Dear Lottery Sambad Result</p>
+            </div>
+            <div class="two">
+                <h2>title</h2>
+                <p>West Bengal Lottery Result Today 6PM | Dear Lottery Sambad Result</p>
+            </div>
+            <div class="three">
+                <h2>title</h2>
+                <p>West Bengal Lottery Result Today 6PM | Dear Lottery Sambad Result</p>
+            </div>
+        </div>
+
+
+<!-- S0CIAL MEDIA -->
+
+
+        <div class="social_media">
+            <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_yfsxyqxp.json" background="transparent"
+                speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+            <a class="facebook" href="#"><img src="photos/facebook.png" height="40px" width="40px" alt="Facebook"></a>
+            <a class="instagram" href="#"><img src="photos/instagram.png" height="40px" width="40px" alt="Instagram"></a>
+            <a class="linkedin" href="#"><img src="photos/linkedin.png" height="40px" width="40px" alt="Linkdin"></a>
+        </div>
+
+
+<!--SUBSCRIBE -->
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer_text">
+                <img src="photos/rupee.png" alt="rupees icon">
+                <h2>Subscribe & get a chance to win Rs. 1 Crore</h2>
+                <h2>সাবস্ক্রাইব করুন এবং ১ কোটি টাকা জেতার সুযোগ পান</h2>
+                <h2>सदस्यता लें और 1 करोड़ रुपये जीतने का मौका पाएं</h2>
+            </div>
+
+            <form action="action_page.php">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="Contact">Contact</label>
+                <select id="Contact" name="Contact">
+                    <option value="email">email</option>
+                    <option value="phone">phone</option>
+
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="Subscribe" value="Subscribe">
+
+            </form>
+        </div>
+
+        <!--  icon section  -->
+
+        <div class="icon_section">
+
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">DCMA</a>
+            <a href="#">Disclaimer</a>
+            <a href="#">Terms and Condition</a>
+
+        </div>
+        <div id="copyright">
+            <p>© Copyright 2023. <a href="#">LotteryView.in</a> All Rights Reservered.</p>
+        </div>
+    </footer>
+
+<!-- SCRIPT SECTION -->
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="lottery.js"></script>
+</body>
+
+</html>
