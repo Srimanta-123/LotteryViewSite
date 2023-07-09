@@ -199,8 +199,8 @@ header {
     border: none;
     outline: none;
     border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: bolder;
     box-shadow: 1px 1px 18px 2px red inset;
     transition: all 0.4s ease-out;
 }
