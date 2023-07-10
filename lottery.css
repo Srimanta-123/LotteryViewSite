@@ -27,6 +27,10 @@ a:hover {
 
 }
 
+p {
+    text-align: justify;
+}
+
 /* header ========================================== */
 
 header {
@@ -58,11 +62,11 @@ header {
     gap: 2rem;
 }
 
-.navbar .links a{
+.navbar .links a {
     font-size: 1.08rem;
 }
 
-.navbar .links a::after{
+.navbar .links a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -75,9 +79,9 @@ header {
     transition: transform 1s;
 }
 
-.navbar .links a:hover::after{
+.navbar .links a:hover::after {
     transform: scaleX(1);
-    
+
 }
 
 
@@ -144,32 +148,6 @@ header {
     justify-content: center;
 }
 
-/*RESPONSIVE DESIGN ============================================== */
-
-@media(max-width: 992px) {
-
-    .navbar .links,
-    .navbar .action_btn {
-        display: none;
-    }
-
-    .navbar .toggle_btn {
-        display: block;
-    }
-
-    .dropdown_menu {
-        display: block;
-    }
-}
-
-
-@media(max-width: 576px) {
-    .dropdown_menu {
-        left: 2rem;
-        width: unset;
-
-    }
-}
 
 
 
@@ -177,25 +155,26 @@ header {
 /*  RESULT TIME  =================================== */
 
 
-.result_time{
+.result_time {
     background-color: wheat;
     position: fixed;
     bottom: 0px;
     left: 5dvw;
     width: 90dvw;
     height: 2rem;
-    border-top-left-radius: 60px ;
-    border-top-right-radius: 60px ;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     z-index: 98;
 }
 
-.result_time .time_btn{
+.result_time .time_btn {
     background-color: orange;
-    color: #fff;
+    color: black;
     padding: 0.6rem 3rem;
+    margin-bottom: 20px;
     border: none;
     outline: none;
     border-radius: 20px;
@@ -205,8 +184,8 @@ header {
     transition: all 0.4s ease-out;
 }
 
-.result_time .time_btn:hover{
-    transform: translate(0,-20px);
+.result_time .time_btn:hover {
+    transform: translate(0, -20px);
 }
 
 
@@ -217,7 +196,7 @@ header {
 
 
 
-.wrapper{
+.wrapper {
     position: absolute;
     left: 35dvw;
     top: 15dvh;
@@ -225,7 +204,7 @@ header {
     height: 60dvh;
     z-index: 99;
     background: transparent;
-    border: 2px solid rgba(255,255,255,0.5);
+    border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 30px gray;
@@ -234,46 +213,46 @@ header {
     justify-content: center;
     overflow: hidden;
     transform: scale(0);
-    transition: transform 0.5s ease , height 0.2s ease;
+    transition: transform 0.5s ease, height 0.2s ease;
 }
 
 .wrapper.active-popup {
-    transform: scale(1); 
+    transform: scale(1);
 }
- 
-.wrapper.active{
+
+.wrapper.active {
     height: 520px;
 }
 
-.wrapper .form-box{
+.wrapper .form-box {
     width: 100%;
     padding: 2.5rem;
 
 }
 
-.wrapper .form-box.login{
+.wrapper .form-box.login {
     transition: transform .18s ease;
     transform: translateX(0);
 
 }
 
-.wrapper.active .form-box.login{
+.wrapper.active .form-box.login {
     transition: none;
     transform: translateX(-400px);
 }
 
-.wrapper .form-box.register{
+.wrapper .form-box.register {
     position: absolute;
     transition: none;
     transform: translateX(400px);
 }
 
-.wrapper.active .form-box.register{
+.wrapper.active .form-box.register {
     transition: transform .18s ease;
     transform: translateX(0);
 }
 
-.wrapper .icon-close{
+.wrapper .icon-close {
     position: absolute;
     top: 0;
     right: 0;
@@ -288,16 +267,16 @@ header {
     border-bottom-left-radius: 20px;
     cursor: pointer;
     z-index: 1;
-} 
+}
 
-.form-box h2{
-    font-size:2rem;
+.form-box h2 {
+    font-size: 2rem;
     color: #4c81aa;
     text-align: center;
 
 }
 
-.input-box{
+.input-box {
     position: relative;
     width: 100%;
     height: 3rem;
@@ -305,7 +284,7 @@ header {
     margin: 30px 0;
 }
 
-.input-box label{
+.input-box label {
     position: absolute;
     top: 50%;
     left: 5px;
@@ -316,7 +295,7 @@ header {
     pointer-events: none;
 }
 
-.input-box input{
+.input-box input {
     width: 100%;
     height: 100%;
     background: transparent;
@@ -328,7 +307,7 @@ header {
     padding: 0 35px 0 5px;
 }
 
-.input-box .icon{
+.input-box .icon {
     position: absolute;
     right: 8px;
     font-size: 1.2em;
@@ -345,7 +324,7 @@ header {
     justify-content: space-around;
 }
 
-.remember-forgot label input{
+.remember-forgot label input {
     accent-color: whitesmoke;
     margin-right: 3px;
 }
@@ -355,7 +334,7 @@ header {
     text-decoration: none;
 }
 
-.remember-forgot a:hover{
+.remember-forgot a:hover {
     text-decoration: underline;
 }
 
@@ -373,7 +352,7 @@ header {
 
 }
 
-.login-register{
+.login-register {
     font-size: 0.9em;
     color: #4c81aa;
     text-align: center;
@@ -387,7 +366,7 @@ header {
     font-weight: 600;
 }
 
-.login-register p a:hover{
+.login-register p a:hover {
     text-decoration: underline;
 }
 
@@ -406,12 +385,17 @@ header {
 
 }
 
+.search .lottie-player {
+    height: 150px;
+    width: 150px;
+}
+
 .search .input {
 
     height: 2rem;
     width: 30dvw;
     border-radius: 60px;
-    
+
 }
 
 .search .input:hover {
@@ -452,20 +436,6 @@ header {
     margin-bottom: 2rem;
 }
 
-/* @media(max-width: 777px){
-    .first h1 , .first h2{
-        font-size: 2rem;
-    }
-
-} */
-
-@media(max-width: 777px) {
-    .first img {
-        height: auto;
-        width: 75dvw;
-    }
-
-}
 
 
 
@@ -473,6 +443,8 @@ header {
 
 #bulb_animation {
     float: right;
+    height: auto;
+    width: 60dvw;
 
 }
 
@@ -491,7 +463,7 @@ header {
     margin: 2rem;
     text-align: center;
     padding: 5rem;
-    border-radius: 5rem;
+    border-radius: 1rem;
     box-shadow: 20px 10px 50px 30px pink inset;
 }
 
@@ -614,12 +586,12 @@ header {
     cursor: pointer;
     box-shadow: 0 10px 10px gray;
     transition: all 0.4s ease-out;
-    
+
 }
 
-.social_media a:hover{
-   transform: translate(0,-20px);
-   /* width: 10rem;   */
+.social_media a:hover {
+    transform: translate(0, -20px);
+    /* width: 10rem;   */
 }
 
 
@@ -628,6 +600,30 @@ header {
 
 /* FOOTER =============================================*/
 
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 100px;
+
+}
+
+.footer_text img {
+    height: 3rem;
+    width: auto;
+    margin-bottom: 1rem;
+}
+
+.footer_text {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-shadow: 10px 10px 10px grey;
+}
+
+.footer_text p {
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+}
 
 input[type=text],
 select,
@@ -662,24 +658,7 @@ input[type=Subscribe]:hover {
     background-color: orange;
 }
 
-.container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 100px;
 
-}
-
-.footer_text {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    text-shadow: 10px 10px 10px grey;
-}
-
-.footer_text img {
-    height: 3rem;
-    width: auto;
-    margin-bottom: 1rem;
-}
 
 
 
@@ -695,6 +674,7 @@ input[type=Subscribe]:hover {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 1.5rem;
+    padding: 2rem 1.5rem 7rem;
 
 }
 
@@ -706,9 +686,205 @@ input[type=Subscribe]:hover {
 }
 
 #copyright p {
-   background-color: #000000;
+    background-color: #000000;
     text-align: center;
     color: grey;
     position: relative;
-    bottom: 50px;
+    bottom: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*RESPONSIVE DESIGN ============================================== */
+
+
+/*
+ Mobile Devices: 319px — 480px
+ iPads and Tablets: 481px — 1200px
+ Laptops: 1201px — 1600px
+ Desktops: 1601px and more
+*/
+
+
+/* LAPTOP AND DESKTOP-------------- */
+
+@media (min-width: 1200px) {}
+
+/* SMALL LAPTOP-------------- */
+
+@media (min-width: 993px) and (max-width: 1200px) {}
+
+/* IPAD AND TABLET ------------*/
+
+@media (min-width:481px) and (max-width: 992px) {
+
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+
+}
+
+/* MOBILE DEVICES ---------------*/
+
+@media(max-width: 480px) {
+
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+
+    }
+
+
+    .search .lottie-player {
+        height: 100px;
+        width: 100px;
+    }
+
+    .search .input {
+
+        height: 2rem;
+        width: 40dvw;
+        border-radius: 60px;
+
+
+    }
+
+    .search .input:hover {
+        width: 55dvw;
+        transition: 2s;
+
+    }
+
+
+    .search input[type=text] {
+        padding: 6px 10px;
+        font-size: 13.1px;
+
+        box-shadow: 2px 2px 15px 5px grey inset;
+    }
+
+    .first h1 {
+        font-size: 7dvw;
+        margin: 0 5dvw;
+        flex-wrap: wrap;
+    }
+
+    .first img {
+        height: auto;
+        width: 75dvw;
+    }
+
+    #bulb_animation {
+        float: none;
+
+    }
+
+    .second p {
+        font-size: 0.8rem;
+        color: white;
+        padding: 1rem 1.5rem;
+
+    }
+
+    .third {
+        margin: 1.5rem;
+        padding: 1rem;
+
+    }
+
+    .third p {
+        padding: 0rem;
+        font-size: 0.8rem;
+        margin: 0.5rem;
+    }
+
+    .third .h3 {
+        background-color: gold;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .third h4 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .similr_posts_heading h3 {
+        font-size: 1.5rem;
+    }
+
+    .social_media {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+
+    .footer_text img {
+        height: 2rem;
+    }
+
+    .footer_text p {
+        font-size: 1rem;
+    }
+
+    input[type=Subscribe] {
+        padding: 10px 1dvw;
+    }
+
+    .icon_section a {
+        font-size: 0.7rem;
+    }
+
+    #copyright p,
+    #copyright a {
+        font-size: 0.6rem;
+    }
+
+    .result_time {
+        height: 1.5rem;
+    }
+
+    .result_time .time_btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.7rem;
+    }
+
+
+
+
 }
