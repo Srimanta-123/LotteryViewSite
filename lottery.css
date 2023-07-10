@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', 'Open Sans', sans-serif;
+    font-family: 'Popns', 'Open Sans', sans-serif;
 }
 
 body {
@@ -385,7 +385,7 @@ header {
 
 }
 
-.search .lottie-player {
+.search .man_search {
     height: 150px;
     width: 150px;
 }
@@ -424,8 +424,13 @@ header {
 }
 
 .first h1 {
-    font-size: 5dvw;
+    font-size: 4dvw;
     margin: 0 5dvw;
+}
+
+.first .many_coin {
+    height: 350px;
+    width: 450px;
 }
 
 
@@ -443,8 +448,8 @@ header {
 
 #bulb_animation {
     float: right;
-    height: auto;
-    width: 60dvw;
+    height: 300px;
+    width: 300px;
 
 }
 
@@ -579,6 +584,10 @@ header {
     overflow: hidden;
 }
 
+.social_media .coin_pig {
+    height: 300px;
+    width: 300px;
+}
 
 .social_media a {
     background-color: white;
@@ -640,7 +649,7 @@ textarea {
 
 }
 
-input[type=Subscribe] {
+.Subscribe {
     background-color: #04AA6D;
     color: white;
     padding: 12px 80px;
@@ -654,7 +663,7 @@ input[type=Subscribe] {
 
 }
 
-input[type=Subscribe]:hover {
+.Subscribe:hover {
     background-color: orange;
 }
 
@@ -766,7 +775,7 @@ input[type=Subscribe]:hover {
     }
 
 
-    .search .lottie-player {
+    .search .man_search {
         height: 100px;
         width: 100px;
     }
@@ -800,6 +809,11 @@ input[type=Subscribe]:hover {
         flex-wrap: wrap;
     }
 
+    .first .many_coin {
+        height: 250px;
+        width: 350px;
+    }
+
     .first img {
         height: auto;
         width: 75dvw;
@@ -807,6 +821,8 @@ input[type=Subscribe]:hover {
 
     #bulb_animation {
         float: none;
+        height: 300px;
+        width: 300px;
 
     }
 
@@ -848,6 +864,11 @@ input[type=Subscribe]:hover {
         flex-direction: column;
         gap: 1.5rem;
         padding: 2rem;
+    }
+
+    .social_media .coin_pig {
+        height: 300px;
+        width: 300px;
     }
 
     .container {
