@@ -437,7 +437,7 @@ header {
 .first h2 {
     color: orange;
     font-weight: bolder;
-    font-size: 5dvw;
+    font-size: 4dvw;
     margin-bottom: 2rem;
 }
 
@@ -540,6 +540,7 @@ header {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 3rem;
+    padding: 0 2rem;
 
 }
 
@@ -547,7 +548,7 @@ header {
     background-color: #04AA6D;
     height: 20rem;
     width: 16rem;
-    padding: 5rem;
+    padding: 3rem;
     margin: 5rem 0;
     border-radius: 2rem;
     box-shadow: 6px 6px 15px 2px grey;
@@ -726,15 +727,28 @@ textarea {
 
 /* LAPTOP AND DESKTOP-------------- */
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+    .first h2 {
+        font-size: 3.5dvw;
+    }
+}
 
 /* SMALL LAPTOP-------------- */
 
 @media (min-width: 993px) and (max-width: 1200px) {}
 
+
+
+
+
 /* IPAD AND TABLET ------------*/
 
 @media (min-width:481px) and (max-width: 992px) {
+
+    .navbar .logo a {
+        font-size: 1.85rem;
+    }
 
     .navbar .links,
     .navbar .action_btn {
@@ -749,11 +763,166 @@ textarea {
         display: block;
     }
 
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+
+    .search .man_search {
+        height: 120px;
+        width: 120px;
+    }
+
+    .search .input {
+
+        height: 2rem;
+        width: 40dvw;
+        border-radius: 60px;
+
+
+    }
+
+    .search .input:hover {
+        width: 55dvw;
+        transition: 2s;
+
+    }
+
+
+    .search input[type=text] {
+        padding: 6px 10px;
+        font-size: unset;
+
+        box-shadow: 2px 2px 15px 5px grey inset;
+    }
+
+    .first h1 {
+        font-size: 5dvw;
+        margin: 0 5dvw;
+        flex-wrap: wrap;
+    }
+
+    .first .many_coin {
+        height: 250px;
+        width: 350px;
+    }
+
+
+    .first img {
+        height: auto;
+        width: 60dvw;
+    }
+
+    #bulb_animation {
+        float: none;
+        height: 280px;
+        width: 280px;
+
+    }
+
+    .second p {
+        font-size: 0.8rem;
+        color: white;
+        padding: 1rem 1.5rem;
+
+    }
+
+    .info th,
+    .info td {
+        font-size: 14px;
+    }
+
+    .third {
+        margin: 1.5rem;
+        padding: 1rem;
+
+    }
+
+    .third p {
+        padding: 0rem;
+        font-size: 0.8rem;
+        margin: 0.5rem;
+    }
+
+    .third .h3 {
+        background-color: gold;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .third h4 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .similr_posts_heading h3 {
+        font-size: 1.4rem;
+    }
+
+    .similr_posts div {
+        height: 18rem;
+        width: 14rem;
+    }
+
+    .social_media {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+
+    .social_media .coin_pig {
+        height: 300px;
+        width: 300px;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+
+    .footer_text img {
+        height: 2rem;
+    }
+
+    .footer_text p {
+        font-size: 1rem;
+    }
+
+    .Subscribe {
+        padding: 10px 20;
+    }
+
+    .icon_section a {
+        font-size: 0.7rem;
+    }
+
+    #copyright p,
+    #copyright a {
+        font-size: 0.6rem;
+    }
+
+    .result_time {
+        height: 1.5rem;
+    }
+
+    .result_time .time_btn {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+
+
+
 }
+
+
 
 /* MOBILE DEVICES ---------------*/
 
 @media(max-width: 480px) {
+
+    .navbar .logo a {
+        font-size: 1.7rem;
+    }
 
     .navbar .links,
     .navbar .action_btn {
@@ -798,8 +967,7 @@ textarea {
 
     .search input[type=text] {
         padding: 6px 10px;
-        font-size: 13.1px;
-
+        font-size: 3.2dvw;
         box-shadow: 2px 2px 15px 5px grey inset;
     }
 
@@ -814,6 +982,10 @@ textarea {
         width: 350px;
     }
 
+    .first h2 {
+        font-size: 5dvw;
+    }
+
     .first img {
         height: auto;
         width: 75dvw;
@@ -821,8 +993,8 @@ textarea {
 
     #bulb_animation {
         float: none;
-        height: 300px;
-        width: 300px;
+        height: 270px;
+        width: 270px;
 
     }
 
@@ -832,6 +1004,12 @@ textarea {
         padding: 1rem 1.5rem;
 
     }
+
+    .info th,
+    .info td {
+        font-size: 13px;
+    }
+
 
     .third {
         margin: 1.5rem;
@@ -857,7 +1035,7 @@ textarea {
     }
 
     .similr_posts_heading h3 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .social_media {
@@ -883,8 +1061,8 @@ textarea {
         font-size: 1rem;
     }
 
-    input[type=Subscribe] {
-        padding: 10px 1dvw;
+    .Subscribe {
+        padding: 10px 20dvw;
     }
 
     .icon_section a {
@@ -901,11 +1079,172 @@ textarea {
     }
 
     .result_time .time_btn {
-        padding: 0.6rem 1.5rem;
-        font-size: 0.7rem;
+        padding: 0.5rem 1.5rem;
+        font-size: 0.9rem;
     }
 
 
+
+
+}
+
+
+
+/*  LOGIN POPUP RESPONSIVE DESIGN--------------- */
+
+@media (min-width:1451px) and (max-width:1600px) {
+    .wrapper {
+        left: 37%;
+        top: 11%;
+        width: 26%;
+        height: 400px;
+
+    }
+}
+
+@media (min-width:1201px) and (max-width:1450px) {
+    .wrapper {
+        left: 35%;
+        top: 11%;
+        width: 30%;
+        height: 400px;
+
+    }
+}
+
+@media (min-width:1001px) and (max-width:1200px) {
+    .wrapper {
+        left: 33%;
+        top: 11%;
+        width: 34%;
+        height: 400px;
+
+    }
+}
+
+@media (min-width:951px) and (max-width:1000px) {
+    .wrapper {
+        left: 31%;
+        top: 11%;
+        width: 38%;
+        height: 400px;
+
+    }
+}
+
+@media (min-width:801px) and (max-width:950px) {
+    .wrapper {
+        left: 27%;
+        top: 11%;
+        width: 46%;
+        height: 400px;
+
+    }
+}
+
+@media (min-width:751px) and (max-width:800px) {
+    .wrapper {
+        left: 25%;
+        top: 11%;
+        width: 50%;
+        height: 400px;
+
+    }
+}
+
+@media (min-width:651px) and (max-width:750px) {
+    .wrapper {
+        left: 22%;
+        top: 11%;
+        width: 56%;
+        height: 400px;
+
+    }
+}
+
+
+@media (min-width:501px) and (max-width:650px) {
+    .wrapper {
+        left: 20%;
+        top: 11%;
+        width: 60%;
+        height: 400px;
+
+    }
+
+}
+
+@media (min-width:551px) and (max-width:650px) {
+    .wrapper {
+        left: 18%;
+        top: 11%;
+        width: 64%;
+        height: 400px;
+
+    }
+}
+
+@media (min-width:461px) and (max-width:550px) {
+    .wrapper {
+        left: 16%;
+        top: 11%;
+        width: 68%;
+        height: 400px;
+    }
+}
+
+@media (min-width:401px) and (max-width:460px) {
+    .wrapper {
+        left: 14%;
+        top: 11%;
+        width: 72%;
+        height: 380px;
+
+    }
+
+    .form-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .input-box label,
+    .input-box .icon,
+    .remember-forgot a,
+    .login-register a {
+        font-size: 0.9rem;
+    }
+
+    .remember-forgot,
+    .login-register p {
+        font-size: 0.8rem;
+    }
+
+
+}
+
+@media (min-width:300px) and (max-width:400px) {
+    .wrapper {
+        left: 12%;
+        top: 11%;
+        width: 76%;
+        height: 380px;
+
+    }
+
+    .form-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .input-box label,
+    .input-box .icon,
+    .remember-forgot a,
+    .login-register a {
+        font-size: 0.9rem;
+    }
+
+    .remember-forgot,
+    .login-register p {
+        font-size: 0.8rem;
+    }
 
 
 }
